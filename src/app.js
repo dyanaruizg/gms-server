@@ -19,7 +19,7 @@ const gardenRouter = require('./routes/garden');
 const plantRouter = require('./routes/plant');
 
 // Mongoose connection
-const connectionString = 
+const connectionString = process.env.DB_CONN ||
 'mongodb+srv://gms_user:s3cret@bellevueuniversity.z0kkzil.mongodb.net/?retryWrites=true&w=majority&appName=BellevueUniversity';
 
 const dbName = 'gms'; // Database name
